@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin-inline: auto;
+}
+@media screen and (min-width: 990px) {
+    .container{
+        width: 80%;
+        margin-inline: auto;
+        transition: all 0,3s linear;
+        -webkit-transition: all  0,3s linear;
+        -moz-transition: all 0,3s linear;
+        -ms-transition: all 0,3s linear;
+        -o-transition: all 0,3s linear;
+    }
+}
+
+.navbar {
+    padding: 5px 0 5px 0;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.navbar.scrolling-active {
+    background-color: black;
+    padding: 15px 0 15px 0;
+}
+
+.navbar.navbar.scrolling-active .box-navbar .brand h1 {
+    color: white;
+}
+
+.navbar.navbar.scrolling-active .box-navbar .navigation ul li a {
+    color: white;
+}
+
+.navbar .box-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .box-navbar .navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar .box-navbar .navigation ul li {
+    list-style-type: none;
+    transition: all 0,2s ease;
+    -webkit-transition: all 0,2s ease;
+    -moz-transition: all 0,2s ease;
+    -ms-transition: all 0,2s ease;
+    -o-transition: all 0,2s ease;
+}
+
+.navbar .box-navbar .navigation ul li:hover {
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.navbar .box-navbar .navigation ul li:hover a {
+    color: blueviolet;
+}
+
+.navbar .box-navbar .navigation ul li:nth-child(5) a {
+    padding: 10px 30px 10px 30px;
+    border: none;
+    font-weight: bold;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.navbar .box-navbar .navigation ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .box-navbar i.ri-menu-line {
+    display: none;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.about {
+    width: 100%;
+    min-height: 100vh;
+}
